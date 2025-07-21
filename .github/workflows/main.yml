@@ -27,7 +27,7 @@ jobs:
 
     #run bandit and output a json report file
     - name: Run Bandit scan
-      run: bandit -ll -ii -r . -f json -o badit-report.json
+      run: bandit -ll -ii -r . -f json -o bandit-report.json
     
     #upload artifact
     - name: upload Artifact
