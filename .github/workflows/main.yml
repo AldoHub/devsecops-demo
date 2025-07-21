@@ -54,7 +54,7 @@ jobs:
 
     #exec docker commands
     - name: Build docker image
-      run: docker build -f Dockerfile -t devsecops_app:latest .
+      run: docker build -f Dockerfile -t devsecops_app:latest . --debug
 
     #scan the docker image
     - name: Docker Scout Scan
