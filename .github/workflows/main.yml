@@ -40,7 +40,7 @@ jobs:
   #--- DOCKER SCANS ---
   docker_image_scan:
     name: Build docker image and run scan
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps: 
     - name: Checkout Code
