@@ -48,7 +48,7 @@ jobs:
 
     #install docker
     - name: Set up docker
-      uses: docker-practice/actions-setup-docker@v1
+      uses: docker-practice/actions-setup-docker@v4
       with: 
         docker_version: '20.10.7'
 
