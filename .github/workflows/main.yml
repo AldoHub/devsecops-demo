@@ -69,7 +69,8 @@ jobs:
         
         #docker scout quickview
         #docker scout cves
-
+        
+    #run docker scout scan and fail the process if vulnerabilities are found
     - name: Docker Scout Scan
       uses: docker/scout-action@v1.18.2
       with:
@@ -78,6 +79,7 @@ jobs:
         command: quickview, cves
         only-severities: critical, high
         sarif-file: scout-report.sarif
+        exit-code: true
 
      #upload artifact
     - name: upload Artifact
